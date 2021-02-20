@@ -1,0 +1,63 @@
+$main-color: #1f2041
+$purple-color: #bc9cff
+$green-color: #6fcf97
+@mixin title
+    font-family:  'Montserrat', sans-serif
+    font-weight: 700
+    font-size: 19px
+    line-height: 28px
+    color: $main-color
+    margin: 0
+
+@mixin subtitle
+    +title
+    font-weight: 400
+    
+
+
+    
+
+*
+    box-sizing: border-box
+body
+    margin: 0
+    padding: 0  
+.first_container
+    margin: 145px 158px 145px 149px
+.palette
+    display: flex
+    flex-direction: column
+.palette_element
+    display: flex
+    margin-top: 15px
+    &:first-child
+        margin-top: 0
+.color
+    width: 70px
+    height: 70px
+    border-radius: 6px
+    &_purple 
+        background-color: $purple-color
+    &_green
+        background-color: $green-color
+    &_dark
+        background-color: $main-color
+        &_75
+            opacity: 0.75
+        &_50
+            opacity: 0.5
+        &_25
+            opacity: 0.25
+        &_5
+            opacity: 0.05
+    &_title
+        +title
+    &_subtitle
+        +subtitle
+    &_box
+        display: flex
+        flex-direction: column
+        padding-left: 40px
+        
+
+
