@@ -10,6 +10,12 @@ body {
 
 .first_container {
   margin: 145px 158px 145px 149px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .palette {
@@ -26,7 +32,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
 }
 
 .palette_element:first-child {
@@ -74,6 +83,7 @@ body {
   line-height: 28px;
   color: #1f2041;
   margin: 0;
+  font-style: normal;
 }
 
 .color_subtitle {
@@ -83,6 +93,7 @@ body {
   line-height: 28px;
   color: #1f2041;
   margin: 0;
+  font-style: normal;
   font-weight: 400;
 }
 

@@ -8,6 +8,7 @@ $green-color: #6fcf97
     line-height: 28px
     color: $main-color
     margin: 0
+    font-style: normal
 
 @mixin subtitle
     +title
@@ -24,12 +25,15 @@ body
     padding: 0  
 .first_container
     margin: 145px 158px 145px 149px
+    display: flex
+    justify-content: space-between
 .palette
     display: flex
     flex-direction: column
 .palette_element
     display: flex
-    margin-top: 15px
+    align-items: center
+    margin-top: 20px
     &:first-child
         margin-top: 0
 .color
