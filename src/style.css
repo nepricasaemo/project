@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.first_container {
+.section__colors_type {
   margin: 145px 158px 145px 149px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,5 +163,9 @@
   opacity: 0.25;
   font-weight: 400;
   text-align: right;
+}
+
+.section__form {
+  margin: 140px 141px 131px 140px;
 }
 /*# sourceMappingURL=style.css.map */
