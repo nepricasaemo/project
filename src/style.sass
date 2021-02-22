@@ -1,18 +1,40 @@
 $main-color: #1f2041
 $purple-color: #bc9cff
 $green-color: #6fcf97
-@mixin title
+@mixin h1
     font-family:  'Montserrat', sans-serif
-    font-weight: 700
-    font-size: 19px
-    line-height: 28px
     color: $main-color
-    margin: 0
-    font-style: normal
-
-@mixin subtitle
-    +title
+    font-size: 24px
+    font-weight: 700
+    line-height: 29px
+    letter-spacing: 0em
+    text-align: left
+@mixin h2
+    font-family:  'Montserrat', sans-serif
+    color: $main-color
+    font-size: 19px
+    font-weight: 700
+    line-height: 23px
+    letter-spacing: 0em
+    text-align: left
+@mixin h3
+    font-family:  'Montserrat', sans-serif
+    font-size: 12px
+    font-weight: 700
+    line-height: 15px
+    color: $main-color
+    text-transform: uppercase
+    letter-spacing: 0em
+    text-align: left
+@mixin body
+    font-family:  'Montserrat', sans-serif
+    color: $main-color
+    font-size: 14px
     font-weight: 400
+    line-height: 24px
+    opacity: 0.75
+    letter-spacing: 0em
+    text-align: left
     
 
 
@@ -20,9 +42,8 @@ $green-color: #6fcf97
 
 *
     box-sizing: border-box
-body
     margin: 0
-    padding: 0  
+    padding: 0
 .first_container
     margin: 145px 158px 145px 149px
     display: flex
@@ -55,13 +76,34 @@ body
         &_5
             opacity: 0.05
     &_title
-        +title
+        +h2
     &_subtitle
-        +subtitle
+        +h2
+        font-weight: 400
     &_box
         display: flex
         flex-direction: column
         padding-left: 40px
-        
+.font
+    display: flex
+    flex-direction: column
+    &_mark
+        display: flex 
+        margin-bottom: 50px
+        text-align: left
+        &:last-child
+            margin-bottom: 0 
+    &_h1
+        +h1
+    &_h2
+        +h2
+    &_h3
+        +h3
+    &_light
+        margin-right: 30px   
+        opacity: 0.25
+        font-weight: 400
+        text-align: right
+
 
 
