@@ -37,6 +37,11 @@ $green-color: #6fcf97
     opacity: 0.75
     letter-spacing: 0em
     text-align: left
+@mixin body_default
+    +body
+    opacity: 0.25
+
+    
     
 
 /*SECTION COLOR*/
@@ -44,6 +49,8 @@ $green-color: #6fcf97
     box-sizing: border-box
     margin: 0
     padding: 0
+.container 
+    width: 100%
 .logo
     position: absolute
     height: 48px
@@ -67,7 +74,7 @@ $green-color: #6fcf97
         top: 48.35px
         border: rgba(31, 32, 65, 0.25)
 .section_color
-    margin: 145px 158px 145px 149px
+    padding: 145px 158px 145px 149px
     display: flex
     justify-content: space-between
 .palette
@@ -164,6 +171,44 @@ $green-color: #6fcf97
 
 /*SECTION FORM*/
 
+
+.section_form
+    padding: 140px
+.second
+    &_logo
+        top: 930px
+    &_left
+        top: 948.35px
+    &_right
+        top: 948.35px
+.block
+    &_upper
+        margin-bottom: 100px
+    &_middle
+        margin-bottom: 105px
+.text_field
+    display: flex
+    flex-direction: column
+.caption_input
+    +h3
+    margin-bottom: 5px
+.default
+    width: 320px
+    height: 44px
+    margin-bottom: 20px
+    +body_default
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    border-radius: 4px
+    padding-left: 15px
+    background: #fff
+    &:hover
+        border: 1px solid rgba(31, 32, 65, 0.5)
+        +body 
+    &_hover
+        border: 1px solid rgba(31, 32, 65, 0.5)
+        +body 
+    &_date
+        text-transform: uppercase
 
 
 
