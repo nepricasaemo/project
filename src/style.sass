@@ -44,7 +44,7 @@ $green-color: #6fcf97
     box-sizing: border-box
     margin: 0
     padding: 0
-.section__colors_type
+.section_color
     margin: 145px 158px 145px 149px
     display: flex
     justify-content: space-between
@@ -67,14 +67,20 @@ $green-color: #6fcf97
         background-color: $green-color
     &_dark
         background-color: $main-color
-        &_75
-            opacity: 0.75
-        &_50
-            opacity: 0.5
-        &_25
-            opacity: 0.25
-        &_5
-            opacity: 0.05
+    &_box
+        display: flex
+        flex-direction: column
+        padding-left: 40px
+.dark
+    &_75
+        opacity: 0.75
+    &_50
+        opacity: 0.5
+    &_25
+        opacity: 0.25
+    &_5
+        opacity: 0.05
+.box
     &_title
         +h2
     &_subtitle
@@ -84,7 +90,7 @@ $green-color: #6fcf97
         display: flex
         flex-direction: column
         padding-left: 40px
-.font
+/*.font
     display: flex
     flex-direction: column
     &_mark
@@ -103,9 +109,9 @@ $green-color: #6fcf97
         margin-right: 30px   
         opacity: 0.25
         font-weight: 400
-        text-align: right
-.section__form
-    margin: 140px 141px 131px 140px
+        text-align: right|||.section__form
+    margin: 140px 141px 131px 140px*/
+
 
 
 
